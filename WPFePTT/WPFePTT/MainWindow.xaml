@@ -1,0 +1,376 @@
+﻿<Window x:Class="WPFePTT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="3486" Width="1200" ResizeMode="NoResize" Background="White">
+
+    <Window.Resources>
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="70"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="200"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="70"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <ScrollViewer>
+
+
+
+
+        <Grid Height="3486">
+
+
+            <Grid x:Name="GridMenu" Width="187" HorizontalAlignment="Left" Background="White" Margin="0,88,0,2856">
+                <Grid.Effect>
+                    <DropShadowEffect BlurRadius="2" ShadowDepth="1" Color="#FFAEAEAE"/>
+                </Grid.Effect>
+                <StackPanel VerticalAlignment="Center"  Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,547,0,-51" Width="179">
+                    <TextBlock Text="Abel Dutra" VerticalAlignment="Center" FontSize="16" Height="30" Width="134"/>
+                    <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" StaysOpen="False" Margin="10" Width="40">
+                        <StackPanel Width="150">
+                            <Button Content="Settings"/>
+                            <Button Content="Account"/>
+                            <Button Content="Help"/>
+                            <Separator/>
+                            <Button Content="Logout"/>
+                        </StackPanel>
+                    </materialDesign:PopupBox>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center"  Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,598,0,-102" Width="179">
+                    <TextBlock Text="Abel Dutra" VerticalAlignment="Center" FontSize="16" Height="30" Width="134"/>
+                    <materialDesign:PopupBox   StaysOpen="False" Margin="10" Width="40" Height="34">
+                        <StackPanel Width="500">
+                            <Button Width="120" Content="Beyaz Eşya" Foreground="Red"/>
+
+                            <Button Content="Account"/>
+                            <Separator/>
+                            <Button Content="Help"/>
+                            <Separator/>
+                            <Button Content="Logout"/>
+                            <Separator/>
+                            <StackPanel VerticalAlignment="Bottom"  Orientation="Horizontal" HorizontalAlignment="Right">
+                                <Image Height="100" Width="100" Source="/Resources/aramaikonu.png"></Image>
+                            </StackPanel>
+                        </StackPanel>
+
+                    </materialDesign:PopupBox>
+                </StackPanel>
+                <StackPanel>
+                    <ListView Background="White" x:Name="ListViewMenu" Foreground="Black" ScrollViewer.HorizontalScrollBarVisibility="Disabled" >
+                        <ListViewItem Background="White" Height="50">
+                            <StackPanel Orientation="Horizontal">
+                               
+                                <materialDesign:PackIcon Kind="ViewDashboard" Height="15" Width="25" Margin="10"/>
+                                <TextBlock Text="Tüm Kategoriler" VerticalAlignment="Center" Margin="20 10" Height="20" Width="97"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Background="White"  Height="50" >
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Computer" Height="15" Width="25" Margin="10"/>
+                                <TextBlock Text="Elektronik" VerticalAlignment="Center" Margin="20 10"/>
+
+
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Background="White" Height="50">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="TshirtCrew" Height="15" Width="25" Margin="10"/>
+                                <TextBlock Text="Moda" VerticalAlignment="Center"  Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Background="White" Height="50" >
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Apple" Height="15" Width="25" Margin="10"/>
+                                <TextBlock Text="Kozmetik ve Sağlık" VerticalAlignment="Center"  Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Background="White" Height="50">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Stroller" Height="15" Width="25" Margin="10"/>
+                                <TextBlock Text="Anne ve Bebek" VerticalAlignment="Center"  Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Background="White" Height="50">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="HomeHeart" Height="15" Width="25" Margin="10"/>
+                                <TextBlock Text="Ev ve Yaşam" VerticalAlignment="Center"  Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Background="White" Height="50">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="SailBoat" Height="15" Width="25" Margin="10"/>
+                                <TextBlock Text="Hobi Dünyası" VerticalAlignment="Center"  Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Background="White" Height="50" >
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Barbell" Height="15" Width="25" Margin="10"/>
+                                <TextBlock Text="Spor ve Outdoor" VerticalAlignment="Center"  Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Background="White" Height="50">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Trolley" Height="15" Width="25" Margin="10"/>
+                                <TextBlock Text="Süpermarket" VerticalAlignment="Center"  Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Background="White" Height="50">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Car" Height="15" Width="25" Margin="10"/>
+                                <TextBlock Text="Otomobil ve Motorsiklet" VerticalAlignment="Center"  Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Background="White" Height="50">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Paw" Height="15" Width="25" Margin="10"/>
+                                <TextBlock Text="Petshop" VerticalAlignment="Center"  Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                </StackPanel>
+            </Grid>
+
+            <Border BorderBrush="Gray" Height="378" Background="#FF3C3B4F" VerticalAlignment="Bottom" Margin="0,0,0,28" >
+                <TextBox Height="40" Width="200" Foreground="White" FontSize=" 25" Margin="10,0,967,338">
+                    ePttAVM.com
+                </TextBox>
+            </Border>
+
+
+
+
+
+
+
+            <Image Height="50" Width="171" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left"  Visibility="Visible" Source="/Resources/pttavm.jpeg" Margin="10,10,0,0"/>
+
+            <ComboBox Background="#FFECECEC" Height="40" Margin="180,15,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.695" Text="Tüm Kategoriler" TextOptions.TextHintingMode="Fixed" Width="168">
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Ev Elektroniği ve TV</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Anne ve Bebek ve Oyuncak;</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Bilgisayar Ve Tablet</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Giyim ve Aksesuar</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Spor ve Outdoor</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Ev Dekorasyon</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Fotoğraf ve Kamera</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Ofis ve Kırtasiye</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Film ve Müzik ve Oyun</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Takı ve Gözlük ve Saat</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Kozmetik ve Sağlık ve Bakım</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Telefon</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Hobi ve Oyuncak</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Otomotiv ve Motorsiklet</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Pet Shop</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">MikroKredi</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Yapı Market ve Bahçe</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Beyaz Eşya</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Kitap</ComboBoxItem>
+                <ComboBoxItem FontSize="14" FontStyle="Italic" FontStretch="ExtraExpanded">Süpermarket</ComboBoxItem>
+            </ComboBox>
+
+            <TextBox FontSize="25" Height="40" Width="395" VerticalAlignment="Top" HorizontalAlignment="Left" Text="  Ne Aramıştınız?" Margin="353,15,0,0"  />
+
+            <Button Height="40" Width="40" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="748,15,0,0">
+
+
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/aramaikonu.png"/>
+                </Button.Background>
+            </Button>
+            <Button Height="40" Width="184" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="803,15,0,0" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/hesabım.jpeg"/>
+                </Button.Background>
+
+            </Button>
+            <Button Height="40" Width="162" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="992,15,0,0" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/sepetim.jpeg"/>
+                </Button.Background>
+            </Button>
+
+
+
+            <Button   BorderBrush="#FFF5F7FA"  Height="34" VerticalAlignment="Top" Margin="641,95,393,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/ptt.jpeg"></ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button   BorderBrush="#FFF5F7FA"  Height="35" VerticalAlignment="Top" Margin="336,95,695,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/kampanyalar1.jpeg"></ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button   BorderBrush="#FFF5F7FA"  Height="35" VerticalAlignment="Top" Margin="789,95,243,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/engelsizürünler.jpeg"></ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button   BorderBrush="#FFF5F7FA"  Height="35" VerticalAlignment="Top" Margin="487,95,533,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/hediiyeni bul.jpeg"></ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button   BorderBrush="#FFF5F7FA"  Height="36" VerticalAlignment="Top" Margin="192,94,846,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/gününfırsatları.png"></ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button   BorderBrush="#FFF5F7FA"  Height="34" VerticalAlignment="Top" Margin="934,95,124,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/kooperatif.jpeg"></ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button   BorderBrush="#FFF5F7FA"  Height="35" VerticalAlignment="Top" Margin="1053,95,23,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/postapazarı.jpeg"></ImageBrush>
+                </Button.Background>
+            </Button>
+            <Image Height="398" VerticalAlignment="Top" Margin="186,139,210,0" Source="/Resources/evindekal.png"/>
+
+            <Image Height="388" VerticalAlignment="Top" Margin="974,142,10,0" Source="/Resources/gününfırsatları1.png"/>
+
+            <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="200,560,762,0" Content="En Çok Satılanlar" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+            <Button Margin="402,560,695,0" BorderBrush="#FFC7C5C5" Height="50" VerticalAlignment="Top"  Content="{materialDesign:PackIcon Kind=ViewDashboard, Size=35
+                }"
+        ToolTip="Tüm kategoriler" />
+            <Button Margin="473,560,623,0" BorderBrush="#FFC7C5C5" Height="50" VerticalAlignment="Top"  Content="{materialDesign:PackIcon Kind=Computer, Size=30 }"
+        ToolTip="Elektronik" />
+            <Button Margin="540,560,558,0" BorderBrush="#FFC7C5C5" Height="50" VerticalAlignment="Top"  Content="{materialDesign:PackIcon  Kind=TshirtCrew, Size=30  }"
+        ToolTip="Giyim/Aksesuar" />
+            <Button Margin="604,560,493,0" BorderBrush="#FFC7C5C5" Height="50" VerticalAlignment="Top"  Content="{materialDesign:PackIcon  Kind=Apple, Size=30  }"
+        ToolTip="Kozmetik/Sağlık" />
+            <Button Margin="668,560,429,0" BorderBrush="#FFC7C5C5" Height="50" VerticalAlignment="Top"  Content="{materialDesign:PackIcon  Kind=Stroller, Size=30  }"
+        ToolTip="Anne/Bebek" />
+            <Button Margin="736,560,361,0" BorderBrush="#FFC7C5C5" Height="50" VerticalAlignment="Top" materialDesign:ColorZoneAssist.Mode="Light" Content=  "{materialDesign:PackIcon  Kind=HomeHeart, Size=30   }"
+        ToolTip="Ev/Yaşam" />
+            <Button materialDesign:ShadowAssist.Darken="True" Margin="803,560,294,0" BorderBrush="#FFC7C5C5" Height="50" VerticalAlignment="Top"  Content="{materialDesign:PackIcon  Kind=SailBoat, Size=30  }"
+        ToolTip="Hobi Dünyası" />
+            <Button Margin="868,560,227,0" BorderBrush="#FFC7C5C5" Height="50" VerticalAlignment="Top"  Content="{materialDesign:PackIcon  Kind=Barbell, Size=30  }"
+        ToolTip="Outdoor/Spor" />
+            <Button Margin="938,560,158,0" BorderBrush="#FFC7C5C5" Height="50" VerticalAlignment="Top"  Content="{materialDesign:PackIcon  Kind=Trolley, Size=30  }"
+        ToolTip="Süpermarket" />
+            <Button Margin="1008,560,89,0" BorderBrush="#FFC7C5C5" Height="50" VerticalAlignment="Top"  Content="{materialDesign:PackIcon  Kind=Car, Size=30  }"
+        ToolTip="Otomobil/Motorsiklet" />
+            <Button Margin="1074,560,23,0" BorderBrush="#FFC7C5C5" Height="50" VerticalAlignment="Top"  Content="{materialDesign:PackIcon  Kind=Paw, Size=30  }"
+        ToolTip="PetShop" />
+
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="545" Height="172" Margin="23,986,0,0" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/kişiselbakım.jpeg"/>
+                </Button.Background>
+
+            </Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="550" Height="172" Margin="604,986,0,0" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/evdeihtiyacın.jpeg"/>
+                </Button.Background>
+
+            </Button>
+
+            <DockPanel Background="#FFF1F1F1" Height="300" VerticalAlignment="Top" Margin="200,610,23,0" RenderTransformOrigin="0.5,0.5">
+                <GroupBox Height="250" Width="200" Margin="0,0,700,0"  >
+                    <Image Source="/Resources/yağ.png" Height="130" VerticalAlignment="Top" Margin="0,10,0,0"></Image>
+
+                </GroupBox>
+                <TextBlock></TextBlock>
+            </DockPanel>
+
+            <Button BorderBrush="#FF3C3B4F" Content="◽Hakkımızda" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="158" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,328"></Button>
+            <Label Foreground="White" FontSize="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Content="Destek Hattı" Margin="336,0,0,365"></Label>
+            <Label Foreground="White" FontSize="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Content="Popüler Sayfalar " Margin="668,0,0,365"></Label>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Güvenli E-Ticaret" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="211" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,290"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Araç KM Sorgulama" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="211" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="23,0,0,214"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽MTV Ödeme" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="177" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,176"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Hasar Sorgula" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="190" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="9,0,0,138"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Modakonseptt" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="190" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,252"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Trafik Cezası Ödeme" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="231" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="14,0,0,100"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Kargomat'a Teslimat" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="235" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,57"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Bize Ulaşın" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="146" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="336,0,0,328"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Sıkça Sorulan Sorular" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="254" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="328,0,0,290"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Ürün İade" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="146" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="332,0,0,252"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Gizlilik Bilgileri" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="187" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="336,0,0,214"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Çerez Politikası" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="187" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="336,0,0,176" RenderTransformOrigin="0.5,0.5"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽İşlem Rehberi" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="179" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="332,0,0,138"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽İletişim" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="113" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="336,0,0,95"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Cep Telefonu" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="42" Width="172" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="688,0,0,328"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Bebek Bezi" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="148" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="692,0,0,290"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Kuruyemiş" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="148" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="692,0,0,252"></Button>
+            <Button BorderBrush="#FF3C3B4F" Content="◽Televizyon" FontSize="20" Foreground="White" Background="#FF3C3B4F" Height="38" Width="148" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="692,0,0,214"></Button>
+
+            <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="14,2424,948,0" Content="En Çok Arananlar" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+
+            <Grid Background="#FFF9F9F9" Width="1140" HorizontalAlignment="Center" Margin="14,2475,23,446">
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Bottom" Margin="10,0,952,505" Content="LED Tv" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="193,0,0,340" Content="Swatch" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Bottom" Margin="376,0,586,450" Content="Gilette" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Bottom" Margin="376,0,586,505" Content="Rebul" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="925,505,37,0" Content="Bebek Arabası" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="742,505,220,0" Content="Yeni Doğan" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="559,505,403,0" Content="Hastane Çıkışı" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="376,505,586,0" Content="Aptamil" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="193,505,769,0" Content="Sudocrem" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="10,505,952,0" Content="Otribebe" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="925,450,37,0" Content="Sleepy" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="742,450,220,0" Content="Evolvia" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="559,450,403,0" Content="Similiac" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="376,450,586,0" Content="Mustela" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="193,450,769,0" Content="Uni Baby" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="10,450,952,0" Content="Nescafe" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="925,395,37,0" Content="Boron" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="742,395,220,0" Content="Tarım Kredi" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="559,395,403,0" Content="Tariş" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="376,395,586,0" Content="Kitap" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="193,395,769,0" Content="Ralli Çocuk Kar Kızağı" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="10,395,952,0" Content="Kış Lastiği" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="925,340,37,0" Content="Varta Akü" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="742,340,220,0" Content="Petlas" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="559,340,403,0" Content="Aksiyon Kamera" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="376,340,586,0" Content="Sıvı Sabun" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="193,340,769,0" Content="Temizlik Seti" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="10,340,952,0" Content="Kahve" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="925,285,37,0" Content="Deterjan" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="742,285,220,0" Content="Akülü Araba" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="559,285,403,0" Content="Prima Bebek Bezi" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="376,285,586,0" Content="Fotokopi Kağıdı" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="193,285,769,0" Content="Yazar Kasa" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="10,285,952,0" Content="Ofis Koltuğu" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="925,230,37,0" Content="Para Kasası" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="742,230,220,0" Content="Cep Telefonu" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="559,230,403,0" Content="Para Sayma" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="376,230,586,0" Content="Kitaplık" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="193,230,769,0" Content="Çalışma Masası" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="10,230,952,0" Content="Ayt" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="925,120,37,0" Content="Roman" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="925,65,37,0" Content="Patiklik İp" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="827,175,135,0" Content="Amigurumi" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="644,175,318,0" Content="Lego" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="742,120,220,0" Content="Lol Bebek" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="461,175,501,0" Content="Puzzle" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="278,175,684,0" Content="Bilim Setleri" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="10,175,952,0" Content="Çok Amaçlı Dolap" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="559,120,403,0" Content="Tel Sandalye" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="376,120,586,0" Content="Ütü Masası" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="193,120,769,0" Content="Çamaşırlık Kurutmalık" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="10,120,952,0" Content="Paşabahçe" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="742,65,220,0" Content="Çaydanlık" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="559,65,403,0" Content="Nevresim Takımı" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="193,65,769,0" Content="Puf" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="10,65,952,0" Content="Yastık" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="925,10,37,0" Content="Duvar Rafı" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="742,10,220,0" Content="Sehpa" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="559,10,403,0" Content="Tupperware" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+                <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="193,10,769,0" Content="Fissler" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
+            </Grid>
+        </Grid>
+
+
+    </ScrollViewer>
+</Window>

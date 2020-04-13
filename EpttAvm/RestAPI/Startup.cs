@@ -1,0 +1,81 @@
+using AutoMapper;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using RestAPI.Controllers.Config;
+using RestAPI.Domain.Repositories;
+using RestAPI.Domain.Services;
+using RestAPI.Extensions;
+using RestAPI.Persistence.Contexts;
+using RestAPI.Persistence.Repositories;
+using RestAPI.Services;
+
+namespace RestAPI
+{
+    public class Startup
+    {
+        public IConfiguration Configuration { get; }
+
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddMemoryCache();
+
+            services.AddCustomSwagger();
+
+            services.AddControllers().ConfigureApiBehaviorOptions(options =>
+            {
+                // Adds a custom error response factory when ModelState is invalid
+                options.InvalidModelStateResponseFactory = InvalidModelStateResponseFactory.ProduceErrorResponse;
+            });
+
+            services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseInMemoryDatabase(Configuration.GetConnectionString("memory"));
+            });
+
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IUsersRepository, UserRepository>();
+            services.AddScoped<ISliderRepository, SliderRepository>();
+            services.AddScoped<ISepetRepository, SepetRepository>();
+            services.AddScoped<ISiparisRepository, SiparisRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IUserServices, UserService>();
+            services.AddScoped<ISliderService, SliderService>();
+            services.AddScoped<ISiparisService, SiparisService>();
+            services.AddScoped<ISepetService, SepetService>();
+
+            services.AddAutoMapper(typeof(Startup));
+        }
+
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseCustomSwagger();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+        }
+    }
+}
