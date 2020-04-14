@@ -5,19 +5,19 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WPFePTT"
       mc:Ignorable="d" 
-      d:DesignHeight="400" d:DesignWidth="781"
-      Title="Elektronik">
+      d:DesignHeight="400"
+      Title="Elektronik" Width="987.228">
 
-    <Grid Height="400" Background="White" Margin="0,0,-197,0" >
+    <Grid Height="400" Background="White" Margin="0,0,10,0" >
 
 
 
 
         <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" Height="22" Width="104" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,10,0,0"><Run Text="   "/><Run Text="Beyaz Eşya"/></TextBlock>
         <Button FontSize="13" Height="22" HorizontalContentAlignment="Left" Content="Buzdolapları," FontFamily="Segoe UI Light" Background="White" Foreground="Black" BorderBrush="White" Margin="0,37,874,341"  />
-        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,64,863,314" ><Run Text="     "/><Run Text="Bulaşık Makineleri,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,64,869,314" ><Run Text="     "/><Run Text="Bulaşık Makineleri,"/></TextBlock>
         <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,86,889,292"><Run Text="     "/><Run Text="Ankatre Setler,"/></TextBlock>
-        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="65,112,799,266" >Derin Dondurucular,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="65,112,812,266" >Derin Dondurucular,</TextBlock>
         <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,151,799,227"><Run Text="   "/><Run Text="Elelktrikli Ev Aletleri"/></TextBlock>
         <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,178,874,200" ><Run Text="     "/><Run Text="Mutfak Dolapları,"/></TextBlock>
         <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,200,874,178" ><Run Text="     "/><Run Text="Meyve Sıkacağı,"/></TextBlock>
@@ -31,10 +31,10 @@
 
         <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="254,10,653,368" Text="Telefon"/>
 
-        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,37,770,341" >Çamaşır Makineleri,</TextBlock>
-        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="116,64,758,314" >Fırınlar,</TextBlock>
-        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="94,86,780,292" >Su Sebilleri,</TextBlock>
-        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="16,112,918,266" >Ocaklar,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,37,771,341" >Çamaşır Makineleri,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="116,64,826,314" >Fırınlar,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="94,86,826,292" >Su Sebilleri,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="16,112,920,266" >Ocaklar,</TextBlock>
         <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,178,812,200" >Su Isıtıcıları,</TextBlock>
         <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,200,830,178" >Blender,</TextBlock>
         <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="154,196,780,182" >Fritöz,</TextBlock>
@@ -74,11 +74,11 @@
         <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="342,359,519,19" ><Run Text="Televizyon"/><Run Text=" Aksesuarları"/><Run Text=","/></TextBlock>
         <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="261,378,600,0" Text="Uydu Sistemleri" />
 
-        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="134" Width="481" Source="/Resources/bumonitörler.png"></Image>
-        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="136" Width="481" Source="/Resources/temelihtiyaçlara.png" Margin="0,124,0,0"></Image>
-        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="432" Source="/Resources/samsung.jpg" Margin="0,312,322,0"></Image>
-        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="161" Source="/Resources/asus.png" Margin="0,312,161,0"></Image>
-        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="180" Source="/Resources/arçelik.jpg" Margin="0,310,0,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="124" Width="481" Source="/Resources/bumonitörler.png"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="120" Width="481" Source="/Resources/temelihtiyaçlara.png" Margin="0,124,0,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="159" Source="/Resources/samsung.jpg" Margin="0,290,322,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="161" Source="/Resources/asus.png" Margin="0,290,161,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="161" Source="/Resources/arçelik.jpg" Margin="0,288,0,0"></Image>
 
 
 

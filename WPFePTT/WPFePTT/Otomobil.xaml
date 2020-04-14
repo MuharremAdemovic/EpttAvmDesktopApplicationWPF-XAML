@@ -6,9 +6,48 @@
       xmlns:local="clr-namespace:WPFePTT"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Otomobil">
+      Title="Otomobil" Height="400" Width="980">
 
-    <Grid Background="White">
-        
+    <Grid Height="400" Width="980" Background="White" Margin="0,0,-197,0" >
+
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" Height="22" Width="155" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,10,0,0"><Run Text="   "/><Run Text="Oto Yedek Parça"/></TextBlock>
+        <TextBlock FontSize="13" Height="22" Text="Motor Yağ," FontFamily="Segoe UI Light" Background="White" Foreground="Black" Margin="0,37,874,341"  />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="5,60,915,318" ><Run Text="     "/><Run Text="Akü,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="60,70,800,308"><Run Text="     "/><Run Text="Aydınlatma Ürünleri,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="14,93,850,285" >Motor Parçaları,</TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,151,799,227"><Run Text="   "/><Run Text="Ses ve Görüntü Sistemleri"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,178,874,200" ><Run Text="     "/><Run Text="Oto Hoparlör,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,200,874,178" ><Run Text="     "/><Run Text="Oto Teyp,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,218,907,160" ><Run Text="     "/><Run Text="Cd Çalar,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="85,220,789,158" ><Run Text="     "/><Run Text="Mp3 Çalar,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="2,240,905,138" ><Run Text="     "/><Run Text="Kameralar,"/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,310,875,68"><Run Text="   "/><Run Text="Oto Lastik"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,332,907,46" ><Run Text="     "/><Run Text="Yaz Lastiği,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,354,889,24" ><Run Text="     "/><Run Text="Kış Lastiği,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,376,874,2" ><Run Text="     "/><Run Text="Dört Mevsim,"/></TextBlock>
+
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="254,10,620,368" Text="Oto Aksesuar"/>
+
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,37,770,341" >Oem Yedek Parça,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="95,200,802,178" >Navigasyon,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="97,180,810,198" RenderTransformOrigin="-0.301,-0.818" >Kameralar</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="254,37,653,341" ><Run Text="Oto Temizlik Ürünleri"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="330,37,577,341" ><Run Text="Aksessuarlar"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="254,59,650,319" ><Run Text="Koltuk Kılıfları"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="335,60,559,318" ><Run Text="Oto İç Aksesuar"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="261,98,520,280" Text="Motosiklet Aksesuarları"/>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="261,124,660,254" Text="Kask," />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="324,130,530,248" Text="Branda ve Sele Örtüsü" />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="261,146,660,232" ><Run Text="Aydınlatma Ürünleri"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="327,146,570,232" ><Run Text="Yedek Parça"/><Run Text=","/></TextBlock>
+
+
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="134" Width="481" />
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="136" Width="481"  Margin="0,124,0,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="432"  Margin="0,312,322,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="161" Margin="0,312,161,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="180" Margin="0,310,0,0"></Image>
+
+
     </Grid>
 </Page>

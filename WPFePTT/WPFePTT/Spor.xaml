@@ -6,9 +6,70 @@
       xmlns:local="clr-namespace:WPFePTT"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Spor">
+      Title="Spor" Height="400" Width="980">
 
-    <Grid Background="White">
-        
+    <Grid Height="400" Width="980" Background="White" Margin="0,0,-197,0" >
+
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" Height="22" Width="190" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,10,0,0"><Run Text="   "/><Run Text="Fitness ve Kondisyon"/></TextBlock>
+        <TextBlock FontSize="13" Height="22" Text="Koşu Bantları," FontFamily="Segoe UI Light" Background="White" Foreground="Black" Margin="0,37,900,341"  />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,64,863,314" ><Run Text="     "/><Run Text="Kondisyon Bisikletleri,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,86,880,292"><Run Text="     "/><Run Text="Mekik Sehpaları,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,113,825,265" >Pilates,</TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,151,799,227"><Run Text="   "/><Run Text="Bisiklet"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,178,874,200" ><Run Text="     "/><Run Text="Dağ Bisikleti,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,200,874,178" ><Run Text="     "/><Run Text="Şehir Bisikleti,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,218,880,160" ><Run Text="     "/><Run Text="Yol Yarış Bisikleti,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="95,198,779,180" ><Run Text="     "/><Run Text="Elektrikli Bisiklet,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="102,215,785,163" ><Run Text="     "/><Run Text="Çocuk Bisikleti,"/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,310,799,68"><Run Text="   "/><Run Text="Spor Branşları"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,332,907,46" ><Run Text="     "/><Run Text="Futbol,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,354,889,24" ><Run Text="     "/><Run Text="Basketbol,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,376,874,2" ><Run Text="     "/><Run Text="Voleybol,"/></TextBlock>
+
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="254,10,653,368" Text="Spor Giyim ve Aksesuar"/>
+
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,37,810,341" >Dambıllar,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="116,64,758,314" >Sporcu Besinleri,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="109,88,765,290" >Çalışma İstasyonları,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="16,112,880,266" >Ağırlık Plakaları,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,178,775,200" >Yedek Parça Bakım,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="89,332,860,46" >Tenis,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,354,810,24" >Masa Tenisi,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="143,330,760,48" >Boks ve Kayak,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="191,354,715,24" >Snowboard,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="109,376,792,2" >Yüzme,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="254,37,653,341" ><Run Text="T-Shirt"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="330,37,577,341" ><Run Text="Eşofman"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="254,59,660,319" ><Run Text="Sweatshirt"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="325,58,594,320" ><Run Text="Tayt"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="385,60,545,318" ><Run Text="Kapri"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="330,78,610,300" ><Run Text="Mont"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="250,80,669,298" ><Run Text="Ayakkabı"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="261,98,589,280" Text="Outdoor"/>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="261,124,685,254" Text="Çadır," />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="297,123,600,255" Text="Şişme Yataklar" />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="261,146,660,232" ><Run Text="Uyku Tulumu"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="327,146,585,232" ><Run Text="Kamp Matı"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="380,123,553,255" Text="Termos " />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="259,164,625,214" ><Run Text="Outdoor Ayakkabı"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="366,165,585,213" Text="Bot" />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="259,186,665,192" Text="Softshell," />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="328,186,620,192" Text="Polar" />
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="261,238,481,140" Text="Kara Balık Av Malzemeleri"/>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="260,265,650,113" ><Run Text="Avcı Yelekleri"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="341,265,560,113" ><Run Text="Avcı Tulumları"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="321,283,525,95" Text="Tüfek ve Tabanca Harbileri " />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="261,288,653,90" Text="Olta Kamış," />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="330,308,568,70" ><Run Text="Maket Balıklar"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="261,310,653,68" Text="Suni Yemler" />
+
+
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="134" Width="481" />
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="136" Width="481"  Margin="0,124,0,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="432"  Margin="0,312,322,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="161" Margin="0,312,161,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="180" Margin="0,310,0,0"></Image>
+
+
     </Grid>
 </Page>

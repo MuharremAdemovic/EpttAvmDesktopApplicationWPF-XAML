@@ -27,110 +27,104 @@
 
         <Grid Height="3486">
 
+            <Grid Margin="473,515,513,2952">
+                <RadioButton  HorizontalAlignment="Left" VerticalAlignment="Top" Width="17" Click="RadioButton_Click" />
+                <RadioButton  HorizontalAlignment="Left" VerticalAlignment="Top" Width="17" Margin="17,0,0,0" Click="RadioButton_Click_1"/>
+                <RadioButton  HorizontalAlignment="Left" Width="17" Margin="32,0,0,1"/>
+                <RadioButton  HorizontalAlignment="Left" VerticalAlignment="Top" Width="17" Margin="50,0,0,0"/>
+                <RadioButton  HorizontalAlignment="Left" VerticalAlignment="Top" Width="17" Margin="66,0,0,0"/>
+                <RadioButton  HorizontalAlignment="Left" VerticalAlignment="Top" Width="17" Margin="83,0,0,0"/>
+                <RadioButton  HorizontalAlignment="Left" VerticalAlignment="Top" Width="17" Margin="99,0,0,0"/>
+                <RadioButton  HorizontalAlignment="Left" VerticalAlignment="Top" Width="17" Margin="115,0,0,0"/>
+                <RadioButton  HorizontalAlignment="Left" VerticalAlignment="Top" Width="17" Margin="131,0,0,0"/>
+                <RadioButton  HorizontalAlignment="Left" VerticalAlignment="Top" Width="17" Margin="148,0,0,0"/>
 
-            <Grid x:Name="GridMenu" Width="187" HorizontalAlignment="Left" Background="White" Margin="0,88,0,2856">
+            </Grid>
+
+            <Frame x:Name="Main" Width="980" Margin="187,135,10,2976"/>
+            <Frame x:Name="Main1" Margin="187,135,243,2984"/>
+
+
+
+
+
+
+
+
+            <Grid x:Name="GridMenu" Width="187" HorizontalAlignment="Left" Background="White" Margin="0,88,0,2925">
                 <Grid.Effect>
                     <DropShadowEffect BlurRadius="2" ShadowDepth="1" Color="#FFAEAEAE"/>
                 </Grid.Effect>
-                <StackPanel VerticalAlignment="Center"  Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,547,0,-51" Width="179">
-                    <TextBlock Text="Abel Dutra" VerticalAlignment="Center" FontSize="16" Height="30" Width="134"/>
-                    <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" StaysOpen="False" Margin="10" Width="40">
-                        <StackPanel Width="150">
-                            <Button Content="Settings"/>
-                            <Button Content="Account"/>
-                            <Button Content="Help"/>
-                            <Separator/>
-                            <Button Content="Logout"/>
-                        </StackPanel>
-                    </materialDesign:PopupBox>
-                </StackPanel>
-                <StackPanel VerticalAlignment="Center"  Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,598,0,-102" Width="179">
-                    <TextBlock Text="Abel Dutra" VerticalAlignment="Center" FontSize="16" Height="30" Width="134"/>
-                    <materialDesign:PopupBox   StaysOpen="False" Margin="10" Width="40" Height="34">
-                        <StackPanel Width="500">
-                            <Button Width="120" Content="Beyaz Eşya" Foreground="Red"/>
 
-                            <Button Content="Account"/>
-                            <Separator/>
-                            <Button Content="Help"/>
-                            <Separator/>
-                            <Button Content="Logout"/>
-                            <Separator/>
-                            <StackPanel VerticalAlignment="Bottom"  Orientation="Horizontal" HorizontalAlignment="Right">
-                                <Image Height="100" Width="100" Source="/Resources/aramaikonu.png"></Image>
-                            </StackPanel>
-                        </StackPanel>
 
-                    </materialDesign:PopupBox>
-                </StackPanel>
                 <StackPanel>
-                    <ListView Background="White" x:Name="ListViewMenu" Foreground="Black" ScrollViewer.HorizontalScrollBarVisibility="Disabled" >
+                    <ListView Background="White" x:Name="ListViewMenu" Foreground="Black" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Height="470"  >
                         <ListViewItem Background="White" Height="50">
                             <StackPanel Orientation="Horizontal">
-                               
+
                                 <materialDesign:PackIcon Kind="ViewDashboard" Height="15" Width="25" Margin="10"/>
                                 <TextBlock Text="Tüm Kategoriler" VerticalAlignment="Center" Margin="20 10" Height="20" Width="97"/>
                             </StackPanel>
                         </ListViewItem>
-                        <ListViewItem Background="White"  Height="50" >
-                            <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="Computer" Height="15" Width="25" Margin="10"/>
+                        <ListViewItem Background="White"  Height="40" MouseMove="ListViewItem_MouseMove"   >
+                            <StackPanel Orientation="Horizontal" Height="30">
+                                <materialDesign:PackIcon Kind="Computer" Height="12" Width="25" Margin="10"/>
                                 <TextBlock Text="Elektronik" VerticalAlignment="Center" Margin="20 10"/>
 
 
                             </StackPanel>
                         </ListViewItem>
-                        <ListViewItem Background="White" Height="50">
-                            <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="TshirtCrew" Height="15" Width="25" Margin="10"/>
+                        <ListViewItem Background="White" Height="40" MouseMove="ListViewItem_MouseMove_2" >
+                            <StackPanel Orientation="Horizontal" Height="30">
+                                <materialDesign:PackIcon Kind="TshirtCrew" Height="12" Width="25" Margin="10"/>
                                 <TextBlock Text="Moda" VerticalAlignment="Center"  Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
-                        <ListViewItem Background="White" Height="50" >
-                            <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="Apple" Height="15" Width="25" Margin="10"/>
+                        <ListViewItem Background="White" Height="40" MouseMove="ListViewItem_MouseMove_4" >
+                            <StackPanel Orientation="Horizontal" Height="30">
+                                <materialDesign:PackIcon Kind="Apple" Height="12" Width="25" Margin="10"/>
                                 <TextBlock Text="Kozmetik ve Sağlık" VerticalAlignment="Center"  Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
-                        <ListViewItem Background="White" Height="50">
-                            <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="Stroller" Height="15" Width="25" Margin="10"/>
+                        <ListViewItem Background="White" Height="40" MouseMove="ListViewItem_MouseMove_1">
+                            <StackPanel Orientation="Horizontal" Height="30">
+                                <materialDesign:PackIcon Kind="Stroller" Height="12" Width="25" Margin="10"/>
                                 <TextBlock Text="Anne ve Bebek" VerticalAlignment="Center"  Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
-                        <ListViewItem Background="White" Height="50">
+                        <ListViewItem Background="White" Height="50" MouseMove="ListViewItem_MouseMove_3">
                             <StackPanel Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="HomeHeart" Height="15" Width="25" Margin="10"/>
                                 <TextBlock Text="Ev ve Yaşam" VerticalAlignment="Center"  Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
-                        <ListViewItem Background="White" Height="50">
-                            <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="SailBoat" Height="15" Width="25" Margin="10"/>
+                        <ListViewItem Background="White" Height="40" MouseMove="ListViewItem_MouseMove_5">
+                            <StackPanel Orientation="Horizontal" Height="30">
+                                <materialDesign:PackIcon Kind="SailBoat" Height="12" Width="25" Margin="10"/>
                                 <TextBlock Text="Hobi Dünyası" VerticalAlignment="Center"  Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
-                        <ListViewItem Background="White" Height="50" >
+                        <ListViewItem Background="White" Height="50" MouseMove="ListViewItem_MouseMove_6" >
                             <StackPanel Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="Barbell" Height="15" Width="25" Margin="10"/>
                                 <TextBlock Text="Spor ve Outdoor" VerticalAlignment="Center"  Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
-                        <ListViewItem Background="White" Height="50">
-                            <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="Trolley" Height="15" Width="25" Margin="10"/>
+                        <ListViewItem Background="White" Height="40" MouseMove="ListViewItem_MouseMove_7">
+                            <StackPanel Orientation="Horizontal" Height="30">
+                                <materialDesign:PackIcon Kind="Trolley" Height="12" Width="25" Margin="10"/>
                                 <TextBlock Text="Süpermarket" VerticalAlignment="Center"  Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
-                        <ListViewItem Background="White" Height="50">
-                            <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="Car" Height="15" Width="25" Margin="10"/>
+                        <ListViewItem Background="White" Height="40" MouseMove="ListViewItem_MouseMove_8">
+                            <StackPanel Orientation="Horizontal" Height="30">
+                                <materialDesign:PackIcon Kind="Car" Height="12" Width="25" Margin="10"/>
                                 <TextBlock Text="Otomobil ve Motorsiklet" VerticalAlignment="Center"  Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
-                        <ListViewItem Background="White" Height="50">
-                            <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="Paw" Height="15" Width="25" Margin="10"/>
+                        <ListViewItem Background="White" Height="40" MouseMove="ListViewItem_MouseMove_9">
+                            <StackPanel Orientation="Horizontal" Height="30">
+                                <materialDesign:PackIcon Kind="Paw" Height="12" Width="25" Margin="10"/>
                                 <TextBlock Text="Petshop" VerticalAlignment="Center"  Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
@@ -233,9 +227,6 @@
                     <ImageBrush ImageSource="/Resources/postapazarı.jpeg"></ImageBrush>
                 </Button.Background>
             </Button>
-            <Image Height="398" VerticalAlignment="Top" Margin="186,139,210,0" Source="/Resources/evindekal.png"/>
-
-            <Image Height="388" VerticalAlignment="Top" Margin="974,142,10,0" Source="/Resources/gününfırsatları1.png"/>
 
             <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="200,560,762,0" Content="En Çok Satılanlar" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
             <Button Margin="402,560,695,0" BorderBrush="#FFC7C5C5" Height="50" VerticalAlignment="Top"  Content="{materialDesign:PackIcon Kind=ViewDashboard, Size=35
@@ -369,6 +360,8 @@
                 <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="559,10,403,0" Content="Tupperware" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
                 <Button Background="#FFECECEC" Height="50" VerticalAlignment="Top" Margin="193,10,769,0" Content="Fissler" FontFamily="Segoe UI Semibold" FontSize="15" Foreground="Black" BorderBrush="#FFC7C5C5"  />
             </Grid>
+
+
         </Grid>
 
 

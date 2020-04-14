@@ -6,9 +6,74 @@
       xmlns:local="clr-namespace:WPFePTT"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Moda">
+      Title="Moda" Height="400" Width="980">
 
-    <Grid Background="White">
-        
+    <Grid Height="400" Background="White" Margin="0,0,-197,0" >
+
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" Height="22" Width="104" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,10,0,0"><Run Text="   "/><Run Text="Moda"/></TextBlock>
+        <TextBlock FontSize="13" Height="22" FontFamily="Segoe UI Light" Background="White" Foreground="Black"  Margin="5,35,1122,343"  ><Run Text="   "/><Run Text="Elbise,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,64,1127,314" ><Run Text="     "/><Run Text="Bluz,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,86,1122,292"><Run Text="     "/><Run Text="Hırka,"/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,151,1062,227"><Run Text="   "/><Run Text="Erkek Giyim"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,178,1112,200" ><Run Text="     "/><Run Text="Gömlek,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,200,1077,178" ><Run Text="     "/><Run Text="Erkek Ayakkabı,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,218,1112,160" ><Run Text="     "/><Run Text="Pantolon,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,244,1122,134" ><Run Text="     "/><Run Text="Kaban,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="65,245,1057,133" ><Run Text="     "/><Run Text="Parka,"/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,310,1057,68"><Run Text="   "/><Run Text="Çocuk giyim"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,332,1057,46" ><Run Text="     "/><Run Text="Erkek Çocuk Giyim,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,354,1072,24" ><Run Text="     "/><Run Text="Kız Çocuk Giyim,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,376,1052,2" ><Run Text="     "/><Run Text="Kız Çocuk Ayakkabısı,"/></TextBlock>
+
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="254,10,602,368" Text="Takı ve Mücevher"/>
+
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="90,40,1007,338" >Tesettür Giyim,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="95,60,1002,318" >Kadın Ayakkabı,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="94,86,1037,292" >İç Giyim,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="16,112,1062,266" >Kadın Büyük Beden,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="76,180,1067,198" >Mont,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="71,222,1067,156" >Ceket,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="105,200,802,178" >Çanta ve Cüzdan</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="115,223,1002,155" >Sweatshirt,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="125,245,1017,133" >Kemer,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="125,330,942,48" >Kız Çocuk Aksesuar,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="115,353,957,25" >Erkek Çocuk İç Giyim,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="254,37,702,341" ><Run Text="Yüzük"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="310,35,642,343" ><Run Text="Bilezik"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="254,59,887,319" ><Run Text="Kolye"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="307,58,827,320" ><Run Text="Bileklik"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="261,98,742,280" Text="Ziynet ve Külçe Altın"/>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="261,124,857,254" Text="Yarım Altın," />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="320,123,792,255" Text="Çeyrek Altın" />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="261,146,637,232" ><Run Text="24 Ayar Gram Altın"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="390,123,737,255" ><Run Text="Tam Altın"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="261,238,777,140" Text="Güneş Gözlükleri"/>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="261,265,882,113" ><Run Text="Erkek"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="300,265,842,113" ><Run Text="Kadın"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="340,265,802,113" Text="Unisex " />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="380,265,762,113" Text="Çocuk," />
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="281,315,837,63" Text="Saatler"/>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="256,343,882,35" Text="Erkek ," />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="295,343,841,35" RenderTransformOrigin="0.5,0.5" >
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.068"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform><Run Text=""/><Run Text=" Kadın"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="335,343,802,35" Text="Unisex" RenderTransformOrigin="0.375,-0.364" />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="375,343,757,35" Text="Çocuk" />
+
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="134" Width="481" />
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="136" Width="481"  Margin="0,124,0,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="161" Margin="0,312,161,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="180" Margin="0,310,0,0"></Image>
+
+
+
+
+
     </Grid>
 </Page>

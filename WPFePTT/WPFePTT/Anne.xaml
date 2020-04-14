@@ -6,9 +6,50 @@
       xmlns:local="clr-namespace:WPFePTT"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Anne">
+      Title="Anne" Height="400" Width="980">
 
-    <Grid Background="White">
-        
+    <Grid Height="400" Width="980" Background="White" Margin="0,0,-197,0" >
+
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" Height="22" Width="265" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,10,0,0"><Run Text="   "/><Run Text="Beslenme ve Mama Sandalyesi"/></TextBlock>
+        <TextBlock FontSize="13" Height="22" Text="Bebek Maması," FontFamily="Segoe UI Light" Background="White" Foreground="Black"  Margin="0,37,890,341"  />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,64,810,314" ><Run Text="     "/><Run Text="Beslenme Mama Sandalyesi,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="14,88,850,290" RenderTransformOrigin="0.819,-0.091" >Derin Dondurucular,</TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,151,750,227"><Run Text="   "/><Run Text="Bebek Bezi ve Islak Mendil"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,178,874,200" ><Run Text="     "/><Run Text="Bebek bezi,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="90,178,784,200" ><Run Text="     "/><Run Text="Islak Mendil,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="5,200,902,178" ><Run Text="     "/><Run Text="Havlu,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="-6,225,880,153" ><Run Text="     "/><Run Text="Alt Açma Pedi,"/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="-1,295,800,83"><Run Text="   "/><Run Text="Banyo Malzemeleri"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,323,865,55" ><Run Text="     "/><Run Text="Bebek Şampuanları,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="119,320,770,58" ><Run Text="     "/><Run Text="Sabunlar,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="195,320,679,58" ><Run Text="     "/><Run Text="Küvet Ürünleri,"/></TextBlock>
+
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="320,8,525,370" Text="Bebek Arabaları"/>
+
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,37,825,341" >Biberon,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="135,85,814,293" >Emzik,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="16,112,885,266" >Mama Tabağı,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="322,30,515,348" ><Run Text="Travel Sistem Bebek Arabası"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="495,28,360,350" ><Run Text="Çift Yönlü Bebek Arabası"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="325,60,558,318" ><Run Text="Baston Pusetler"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="430,63,480,315" ><Run Text="El Telsizleri"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="320,100,530,278" Text="Bebek Odası" RenderTransformOrigin="0.8,0.773"/>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="320,120,591,258" Text="Park Yatak," RenderTransformOrigin="1.652,0.5" />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="395,120,525,258" Text="Uyku Seti" />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="321,145,555,233" ><Run Text="Nevresim Takımları"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="322,175,420,203" Text="Bebek Sağlığı"/>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="320,205,550,173" ><Run Text="Bebek Bakım Çantası"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="321,230,595,148" ><Run Text="Pişik Kremi"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="443,205,425,173" Text="Diğer Banyo Ürünleri " />
+
+
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="134" Width="481" />
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="136" Width="481"  Margin="0,124,0,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="432"  Margin="0,317,328,-5"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="161" Margin="0,312,161,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="180" Margin="0,310,0,0"></Image>
+
+
+
     </Grid>
 </Page>

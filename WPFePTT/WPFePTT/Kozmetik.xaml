@@ -6,9 +6,60 @@
       xmlns:local="clr-namespace:WPFePTT"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Kozmetik">
+      Title="Kozmetik" Height="400" Width="980">
 
-    <Grid Background="White">
-        
+    <Grid Height="400" Background="White" Margin="0,2,-197,-2" >
+
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" Height="22" Width="104" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,10,0,0"><Run Text="   "/><Run Text=" Parfüm"/></TextBlock>
+        <TextBlock FontSize="13" Height="22" Text="erkek Parfüm," FontFamily="Segoe UI Light" Background="White" Foreground="Black"  Margin="0,37,1097,341"  />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,64,1067,314" ><Run Text="     "/><Run Text="Parfüm Setler,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,86,1052,292" RenderTransformOrigin="0.5,0.5"><Run Text="     "/><Run Text="Parfüm Deodorantlar,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="15,113,1057,265" >Kadın Parfüm,</TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,151,992,227"><Run Text="   "/><Run Text="Cilt Bakımı"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,178,1097,200" ><Run Text="     "/><Run Text="Yüz Bakımı,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,200,1077,178" ><Run Text="     "/><Run Text="Göz Bakımı,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,218,1087,160" ><Run Text="     "/><Run Text="Dudak Bakımı,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,244,1087,134" ><Run Text="     "/><Run Text="Vücut Bakımı,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,261,1097,117" ><Run Text="     "/><Run Text="Cilt Bakımı,"/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="0,310,799,68"><Run Text="   "/><Run Text="Makyaj Ürünleri"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,332,907,46" ><Run Text="     "/><Run Text="Yüz,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,354,889,24" ><Run Text="     "/><Run Text="Dudaklar,"/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="0,376,874,2" ><Run Text="     "/><Run Text="Tırnaklar,"/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="254,10,792,368" Text="Güneş Ürünleri"/>
+
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,37,967,341" >Vücut Spreyi,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="116,64,977,314" >Çocuk Parfümü,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="135,90,967,288" >Parfüm Setler,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,178,1002,200" >Vücut Bakımı,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,200,1012,178" >Cilt Bakımı,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="165,198,887,180" >El,Ayak ve Tırnak Bakımı,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="106,220,962,158" >Erkek Bakım Ürünleri,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="90,260,994,118" >Cilt Bakım Setleri</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="116,244,972,134" >Dermokozmetik,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="89,332,785,46" >Makyaj Temizleyiciler,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="104,354,792,24" >Makyaj Fırça,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="198,332,736,46" >Makyaj Setleri,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="191,354,743,24" >Makyaj Temizleme Setleri,</TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="250,35,807,343" ><Run Text="Güneş Krem Losyonları"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="380,33,677,345" ><Run Text="Güneş Sonrası Ürünler"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="254,59,842,319" ><Run Text="Bronzlaştırıcılar"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="354,59,757,319" ><Run Text="Çocuk Güneş Ürünleri"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22" Foreground="Red" FontSize="17" FontWeight="Bold" Margin="261,98,787,280" Text="Kişisel Bakım"/>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="261,124,797,254" Text="Kişisel Bakım Ürünleri," />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="395,120,672,258" Text="Saç Bakım Ürünleri" />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="261,146,837,232" ><Run Text="Sağlık Ürünleri"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="352,145,707,233" ><Run Text="Duş ve Banyo Ürünleri"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="335,183,757,195" Text="Medikal Ürünler " />
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="259,164,832,214" ><Run Text="Besin Takviyeleri"/><Run Text=","/></TextBlock>
+        <TextBlock Height="22"  FontFamily="Segoe UI Light" Margin="350,165,720,213" Text="Kişisel Bakım Aletleri" />
+
+
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="134" Width="481" />
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="136" Width="481"  Margin="0,124,0,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="432"  Margin="0,312,322,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="161" Margin="0,312,161,0"></Image>
+        <Image HorizontalAlignment="Right" VerticalAlignment="Top" Height="88" Width="180" Margin="0,310,0,0"></Image>
+
+
     </Grid>
 </Page>
